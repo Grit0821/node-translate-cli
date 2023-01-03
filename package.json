@@ -1,0 +1,24 @@
+{
+  "name": "sail-node-fanyi",
+  "version": "0.0.3",
+  "main": "dist/main.js",
+  "scripts": {
+    "fanyi": "ts-node-dev src/cli.ts"
+  },
+  "files": [
+    "dist/**/*.js"
+  ],
+  "bin": {
+    "fanyi": "dist/cli.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^3.0.2",
+    "global": "^4.4.0",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.3.2",
+    "@types/node": "^18.11.18"
+  }
+}
