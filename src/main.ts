@@ -10,6 +10,7 @@ export const translate = (word: string) => {
   // 3.返回响应
 
   const salt = Math.random()
+  // md5 生成sign
   const sign = md5(appId + word + salt + appSecret)
   let from, to
   if (/[a-zA-Z]/.test(word)) {
